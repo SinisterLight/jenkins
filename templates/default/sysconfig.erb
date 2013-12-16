@@ -95,3 +95,11 @@ JENKINS_HANDLER_IDLE="20"
 # Full option list: java -jar jenkins.war --help
 #
 JENKINS_ARGS=""
+
+## Type: ipaddress
+### Default: "0.0.0.0"
+### ServiceRestart: jenkins
+##
+## listen interface for jenkins.
+##
+#JENKINS_LISTEN_ADDRESS="<%= @listen_address %>"

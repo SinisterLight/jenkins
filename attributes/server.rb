@@ -28,6 +28,7 @@ default['jenkins']['server']['log_dir'] = '/var/log/jenkins'
 default['jenkins']['server']['user'] = 'jenkins'
 default['jenkins']['server']['dir_permissions'] = 00755
 default['jenkins']['server']['ssh_dir_permissions'] = 00700
+default['jenkins']['server']['listen_address'] = '0.0.0.0'
 case node['platform_family']
 when 'debian'
   default['jenkins']['server']['install_method'] = 'package'
